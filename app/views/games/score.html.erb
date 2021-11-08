@@ -1,7 +1,10 @@
 <h1>results</h1>
+<% if @result && @english%>
+  <p><strong>Congratulations!</strong><%= @guess %> is a valid english word! SCORE: <%= @score %></p>
+<% elsif @english %>
+  <p>Sorry but <%= @guess %> cannot be built out of <%= @letters %></p>
+<% else %>
+  <p>Sorry but <%= @guess %> dosn't seem to be a valid english word</p>
+<% end %>
 
-<p>Sorry but <%= @score %> cannot be built out of <%= @letters.join(", ") %></p>
-
-<p>Sorry but <%=  %> dosn't seem to be a valid english word</p>
-
-<p><strong>Congratulations!</strong><%=  %> is a valid english word!</p>
+  <%= link_to "Try again", '/new' %>

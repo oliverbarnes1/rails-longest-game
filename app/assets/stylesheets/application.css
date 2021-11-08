@@ -14,7 +14,8 @@
  *= require_self
  */
 
- #letters::first-letter {
-   background-color: blue;
-   padding: 4px;
+ #letters {
+   background-color: rgb(48, 172, 255);
+   padding: 10px;
+   margin-right: 1505px;
  }
