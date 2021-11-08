@@ -1,0 +1,13 @@
+<h1>Welcome to the worlds longest game:</h1>
+<h3>Here is your grid of letters</h3>
+<h4 id="letters"><%= @letters.join(" ") %></h4>
+
+<p>please enter a guess</p>
+<form action="/score">
+  <input type="text" name="guess">
+  <input type="submit" value="Guess!">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :letters, @letters %>
+</form>
+
+<%= @new %>

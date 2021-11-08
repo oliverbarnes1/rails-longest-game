@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ #letters::first-letter {
+   background-color: blue;
+   padding: 4px;
+ }
